@@ -64,6 +64,74 @@
             <li> Costo Total en Dolares Americanos: <?php echo round($costo_total_dolar) ?></li>
         </ul>
     </section>
+    <?php
+    define ('SALUDO' , 'Hola Nuevamente');
+    echo SALUDO;
+    echo "<br>";
+    const PI = 3.1416;
+    echo PI;
+    //ARRAY
+    define ('COLORES' , array('azul', 'negro', 'rojo'));
+    echo "<br>";
+    echo COLORES [1];
+
+    const COLORES2 = array('blanco', 'violeta', 'amarillo');
+    echo"<br>";
+    echo COLORES2[2];
+
+    //Constantes predefinidas ejemplos 
+    echo"<br>";
+    echo PHP_INT_MAX;
+    echo"<br>";
+    echo PHP_VERSION_ID;
+    echo"<br>";
+    echo PHP_INT_MIN;
+    echo"<br>";
+    echo PHP_FLOAT_MAX;
+    echo"<br>";
+    echo PHP_FLOAT_MIN;
+
+
+    //Operadores
+    //aritmeticos
+    $a = 1;
+    $b = 2;
+    echo"<br>";
+    echo $a + $b;//suma
+    echo"<br>";
+    echo $a - $b;//resta
+    echo"<br>";
+    echo $a * $b; // multiplicacion
+    echo"<br>";
+    echo $a / $b; // division
+    echo"<br>";
+    echo $a % $b;// resto de la division de A entre B
+    echo"<br>";
+    echo $a++;//incrementar la variable A en 1
+    echo $a--;//disminuye la variable A en 1
+    
+    //de comparacion
+    echo"<br>";
+    echo $a < $b; //compara si A es menor que B (se puede hacer lo mismo con MAYOR a B)
+    echo"<br>";
+    echo $a <= $b; //compara si A es menor-igual que B (se puede hacer lo mismo con MAYOR IGUAL a B)
+    echo"<br>";
+    echo $a == $b; //compara si A es igual a B (debe llevar dos signos = para realizar la comparacion)
+    echo"<br>";
+    echo $a === $b; //compara si A es igual a B en TIPO Y VALOR (debe llevar 3 signos = y comparar tanto el valor absoluto como el tipo de entrada)
+    echo"<br>";
+    echo $a != $b; //compara si A es diferente a B (debe llevar dos signos = para realizar la comparacion)
+    echo"<br>";
+    echo $a !== $b; //compara si A es diferente a B en TIPO Y VALOR (debe llevar 3 signos = y comparar tanto el valor absoluto como el tipo de entrada)
+
+    //Operadores Logicos
+    echo"<br>";
+    echo $a and $b; // se consulta si A y B son cierto (tb se puede reemplazar el AND con &)
+    echo"<br>";
+    echo $a or $b; // se consulta si A o B son cierto
+    echo"<br>";
+    ?>
+
     <section class="Cotizacion">
         <div><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%); float: left ;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe></div>
         <div><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%); float: left ;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-bancos-y-casas-de-cambio" frameborder="0"></iframe></div>
