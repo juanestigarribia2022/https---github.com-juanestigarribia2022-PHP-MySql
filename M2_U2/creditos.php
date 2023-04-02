@@ -22,30 +22,37 @@
     <section class="creditos contenidos">
         <H2>Clases de Creditos</H2>
         <ul>
-            <li> <a href="creditos.php?personal=pl">Creditos Personales</a></li>
-            <li> <a href="creditos.php?comercial=cm">Creditos Comerciales</a></li>
-            <li> <a href="creditos.php?prendario=pr">Creditos Prendarios</a></li>
+            <li> <a href="creditos.php?creditos=pl">Creditos Personales</a></li>
+            <li> <a href="creditos.php?creditos=cm">Creditos Comerciales</a></li>
+            <li> <a href="creditos.php?creditos=pr">Creditos Prendarios</a></li>
         </ul>
     </section>
     <?php
+    $nombre = ' ';
+    $CFT = ' ';
+    $montohasta = ' ';
+
     if (isset($_GET['creditos'])) {
 
         switch ($_GET['creditos']) {
             case 'pl':
-                $nombre = "Personal";
+                $nombre = "Credito Personal";
                 $CFT = "CFT 240%";
-                $montohasta = "$200.000";
+                $montohasta = "Monto a Financiar hasta $200000";
+                $img = './img/$200000.png';
                 break;
 
             case 'cm':
-                $nombre = "Comercial";
+                $nombre = "Credito Comercial";
                 $CFT = "CFT 200%";
-                $montohasta = "$1.000.000";
+                $montohasta = "Monto a Financiar hasta 1000000";
+                $img = './img/7.jpg';
                 break;
             case 'pr':
-                $nombre = "Prendario";
+                $nombre = "Credito Prendario";
                 $CFT = "CFT 80%";
-                $montohasta = "$5.000.000";
+                $montohasta = "Monto a Financiar hasta 5000000";
+                $img = './img/shopping-bags.jpg';
                 break;
             default:
                 echo "Indicanos en que podemos ayudarte.";
@@ -53,9 +60,13 @@
     }
     ?>
     <div class="tipos de creditos">
-        <h2> <?php echo $nombre; ?></h2>
-        <h3> <?php echo $CFT; ?></h3>
+        <h2> <?php echo $nombre; ?></h2>;
+        <h3> <?php echo $CFT; ?></h3>;
         <h3> <?php echo $montohasta; ?></h3>
+
+        <div class="contenedor img">
+            <img src="<?php echo $img ?>" alt="">
+        </div>
     </div>
 
 
