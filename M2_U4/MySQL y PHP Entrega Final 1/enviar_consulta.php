@@ -8,6 +8,10 @@ $mensaje_form = $_POST['mensaje'];
 
 //$conexion = mysqli_connect('localhost', 'root', '', 'php_inicial') or exit ("No se pudo conectar a la base de datos");//
 
+//ENVIO DE MAIL POR CONSULTA   //
+$cuerpo_mail = "Nombre: ".$nombre_form . "\r\n"."Apellido: ".$apellido_form . "\r\n"."Edad: ".$edad_form."\r\n"."Mensaje: ".$mensaje_form;
+mail(estigarribiajuanesteban@gmail.com, "Mensaje enviado desde la web de CrediMas", $cuerpo_mail);
+
 $conexion = mysqli_connect('localhost', 'id20457626_juan', '9C9{MO}7rbH6yB?M', 'id20457626_php_inicial') or exit ("No se pudo conectar a la base de datos");
 
 mysqli_query($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form', '$edad_form', '$mensaje_form')");
