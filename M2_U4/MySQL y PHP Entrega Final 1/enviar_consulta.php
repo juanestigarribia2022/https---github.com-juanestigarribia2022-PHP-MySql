@@ -8,7 +8,7 @@ $mensaje_form = $_POST['mensaje'];
 
 //$conexion = mysqli_connect('localhost', 'root', '', 'php_inicial') or exit ("No se pudo conectar a la base de datos");//
 
-$conexion = mysqli_connect('localhost', 'id20457626_juan', 'V?CJ^d7m5~v-Pg-L', 'id20457626_php_inicial') or exit ("No se pudo conectar a la base de datos");
+$conexion = mysqli_connect('localhost', 'id20457626_juan', '9C9{MO}7rbH6yB?M', 'id20457626_php_inicial') or exit ("No se pudo conectar a la base de datos");
 
 mysqli_query($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form', '$edad_form', '$mensaje_form')");
 
