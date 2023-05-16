@@ -133,7 +133,9 @@
                     ?>
                         <div class="listado_clientes">
                             <h4> <?php echo $mostrar_datos['nombre'] . " " . $mostrar_datos["dni"]; ?> </h4>
+                            <a href="eliminar.php?id=<?php echo $mostrar_datos['id']; ?>">Eliminar</a>
                         </div>
+                        
 
 
                     <?php } ?>
