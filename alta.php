@@ -110,7 +110,7 @@
                             <tr>
                                 <td width="25%" height="60" align="center" valign="middle" bgcolor="#FFFF00"><strong><a href="listar.php">CLIENTES</a></strong></td>
                                 <td width="25%" height="60" align="center" valign="middle" bgcolor="#FF9900"><strong><a href="configuracion.php">CONFIGURACIÓN</a> <a href="caja.php"></a></strong></td>
-                                <td width="25%" height="60" align="center" valign="middle" bgcolor="#FF6600"><strong><a href="usuarios.php">USUARIOS</a> </strong></td>
+                                <td width="25%" height="60" align="center" valign="middle" bgcolor="#FF6600"><strong><a href="comentario.php">DEJE SU COMENTARIO</a> </strong></td>
                             </tr>
                             <tr>
                                 <td width="25%" height="60" align="center" valign="middle" bgcolor="#FFFF33"><strong><a href="alta.php">ALTA CLIENTE</a></strong></td>
