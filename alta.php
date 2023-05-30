@@ -91,7 +91,6 @@
                 <tr>
                     <td width="15%"><img src="./img/LogoCrediMas Negro.jpeg" width="100" height="100"></td>
                     <td width="85%" valign="middle">
-                        <font color="#FFFFFF"><strong>Usuario: </strong> </font>
                     </td>
                 </tr>
             </tbody>
